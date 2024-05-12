@@ -139,3 +139,5 @@ class FocalLossV1(nn.Module):
 - for label smoothing effection, use logit / temperature
 
 ## Inference
+Cause the inference evaluation metric is MAP, logit(before sigmoid func to transform the probibility) submission can be also correct.
+So , I withhold the sigmoid to output the logit scores for a more dramatic effect in the ensemble later.
